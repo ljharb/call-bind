@@ -1,0 +1,43 @@
+{
+	"name": "call-bind",
+	"version": "0.0.0",
+	"description": "Robustly `.call.bind()` a function",
+	"main": "index.js",
+	"exports": {
+		".": [
+			{
+				"default": "./index.js"
+			},
+			"./index.js"
+		],
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/call-bind.git"
+	},
+	"keywords": [
+		"javascript",
+		"ecmascript",
+		"es",
+		"js",
+		"callbind",
+		"callbound",
+		"call",
+		"bind",
+		"bound",
+		"call-bind",
+		"call-bound",
+		"function",
+		"es-abstract"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/call-bind/issues"
+	},
+	"homepage": "https://github.com/ljharb/call-bind#readme"
+}
