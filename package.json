@@ -21,7 +21,9 @@
 	"scripts": {
 		"lint": "eslint --ext=.js,.mjs .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"tests-only": "tape 'test/*'",
+		"test": "npm run tests-only",
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -53,7 +55,9 @@
 	"homepage": "https://github.com/ljharb/call-bind#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.2.0",
-		"eslint": "^7.12.1"
+		"aud": "^1.1.2",
+		"eslint": "^7.12.1",
+		"tape": "^5.0.1"
 	},
 	"dependencies": {
 		"function-bind": "^1.1.1",
