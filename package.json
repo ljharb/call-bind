@@ -19,6 +19,7 @@
 		"./package.json": "./package.json"
 	},
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"lint": "eslint --ext=.js,.mjs .",
 		"pretest": "npm run lint",
 		"tests-only": "tape 'test/*'",
@@ -60,6 +61,7 @@
 		"aud": "^1.1.2",
 		"auto-changelog": "^2.2.1",
 		"eslint": "^7.12.1",
+		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.1"
 	},
 	"dependencies": {
