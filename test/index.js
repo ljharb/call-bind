@@ -1,12 +1,17 @@
 'use strict';
 
 var callBind = require('../');
+var bind = require('function-bind');
 
 var test = require('tape');
 
+/*
+ * older engines have length nonconfigurable
+ * in io.js v3, it is configurable except on bound functions, hence the .bind()
+ */
 var functionsHaveConfigurableLengths = !!(
 	Object.getOwnPropertyDescriptor
-	&& Object.getOwnPropertyDescriptor(function () {}, 'length').configurable
+	&& Object.getOwnPropertyDescriptor(bind.call(function () {}), 'length').configurable
 );
 
 test('callBind', function (t) {
