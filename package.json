@@ -67,7 +67,7 @@
 	},
 	"dependencies": {
 		"function-bind": "^1.1.1",
-		"get-intrinsic": "^1.0.1"
+		"get-intrinsic": "^1.0.2"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
