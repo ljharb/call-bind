@@ -25,10 +25,11 @@ module.exports = function callBind(originalFunction) {
 	if ($gOPD && $defineProperty) {
 		var desc = $gOPD(func, 'length');
 		if (desc.configurable) {
+			// original length, plus the receiver, minus any additional arguments (after the receiver)
 			$defineProperty(
 				func,
 				'length',
-				{ value: $max(0, originalFunction.length - (arguments.length - 1)) }
+				{ value: 1 + $max(0, originalFunction.length - (arguments.length - 1)) }
 			);
 		}
 	}
