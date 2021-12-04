@@ -4,18 +4,8 @@
 	"description": "Robustly `.call.bind()` a function",
 	"main": "index.js",
 	"exports": {
-		".": [
-			{
-				"default": "./index.js"
-			},
-			"./index.js"
-		],
-		"./callBound": [
-			{
-				"default": "./callBound.js"
-			},
-			"./callBound.js"
-		],
+		".": "./index.js",
+		"./callBound": "./callBound.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
