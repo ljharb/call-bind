@@ -4,6 +4,9 @@ var callBind = require('../');
 var bind = require('function-bind');
 var gOPD = require('gopd');
 var hasStrictMode = require('has-strict-mode')();
+var forEach = require('for-each');
+var inspect = require('object-inspect');
+var v = require('es-value-fixtures');
 
 var test = require('tape');
 
@@ -18,6 +21,14 @@ var functionsHaveConfigurableLengths = !!(
 );
 
 test('callBind', function (t) {
+	forEach(v.nonFunctions, function (nonFunction) {
+		t['throws'](
+			function () { callBind(nonFunction); },
+			TypeError,
+			inspect(nonFunction) + ' is not a function'
+		);
+	});
+
 	var sentinel = { sentinel: true };
 	var func = function (a, b) {
 		// eslint-disable-next-line no-invalid-this
