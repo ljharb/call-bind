@@ -69,7 +69,7 @@
 	"dependencies": {
 		"function-bind": "^1.1.2",
 		"get-intrinsic": "^1.2.1",
-		"set-function-length": "^1.1.0"
+		"set-function-length": "^1.1.1"
 	},
 	"testling": {
 		"files": "test/index.js"
