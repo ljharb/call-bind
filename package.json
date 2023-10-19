@@ -55,6 +55,8 @@
 		"auto-changelog": "^2.4.0",
 		"eslint": "=8.8.0",
 		"evalmd": "^0.0.19",
+		"gopd": "^1.0.1",
+		"has-strict-mode": "^1.0.1",
 		"in-publish": "^2.0.1",
 		"npmignore": "^0.3.0",
 		"nyc": "^10.3.2",
@@ -63,7 +65,11 @@
 	},
 	"dependencies": {
 		"function-bind": "^1.1.2",
-		"get-intrinsic": "^1.2.1"
+		"get-intrinsic": "^1.2.1",
+		"set-function-length": "^1.1.0"
+	},
+	"testling": {
+		"files": "test/index.js"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
