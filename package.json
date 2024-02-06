@@ -68,8 +68,8 @@
 	},
 	"dependencies": {
 		"function-bind": "^1.1.2",
-		"get-intrinsic": "^1.2.1",
-		"set-function-length": "^1.1.1"
+		"get-intrinsic": "^1.2.3",
+		"set-function-length": "^1.2.0"
 	},
 	"testling": {
 		"files": "test/index.js"
