@@ -1,6 +1,6 @@
 {
 	"name": "call-bind",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Robustly `.call.bind()` a function",
 	"main": "index.js",
 	"exports": {
