@@ -4,8 +4,8 @@ var setFunctionLength = require('set-function-length');
 
 var $defineProperty = require('es-define-property');
 
-var callBindBasic = require('./helpers/callBindBasic');
-var applyBind = require('./helpers/applyBind');
+var callBindBasic = require('call-bind-apply-helpers');
+var applyBind = require('call-bind-apply-helpers/applyBind');
 
 module.exports = function callBind(originalFunction) {
 	var func = callBindBasic(arguments);

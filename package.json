@@ -50,9 +50,8 @@
 	},
 	"homepage": "https://github.com/ljharb/call-bind#readme",
 	"dependencies": {
+		"call-bind-apply-helpers": "^1.0.0",
 		"es-define-property": "^1.0.0",
-		"es-errors": "^1.3.0",
-		"function-bind": "^1.1.2",
 		"get-intrinsic": "^1.2.4",
 		"set-function-length": "^1.2.2"
 	},
